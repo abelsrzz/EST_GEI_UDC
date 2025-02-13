@@ -5,7 +5,6 @@
         <a href='https://profile.intra.42.fr/users/abelsrz' target="_blank">
             <img alt='Logo Abel' src='https://img.shields.io/badge/@abelsrzz-blue?style=flat'/>
         </a>
-        <img src="https://api.visitorbadge.io/api/visitors?user=abelsrzz&repo=EST_GEI_UDC&label=visitas&countColor=grey&style=flat&labelStyle=none"/>
     <hr>
 </div>
 
