@@ -16,7 +16,7 @@ library(Rcmdr) # Importar R Commander
 # EL código mostrado a continuación debe introducirse en RCommander
 # La guía para esta práctica está en el fichero 'práctica_2.md'.
 
-setwd("./")
+setwd("ruta_del_proyecto")
 load("utils/top500_a.RData") # Cargamos la base de datos Top 500
 
 ad.data.frame(attr(top500, "variable.labels")) # Devuelve las etiquetas de las variables

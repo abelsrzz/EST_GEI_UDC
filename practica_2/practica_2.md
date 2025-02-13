@@ -8,7 +8,7 @@ Podemos lanzar la interfaz de R Commander con el comando `library(Rcmdr)`
 Para poder importar la base de datos [Top 500](/utils/top500_a.RData) debemos definir el directorio de trabajo de R Comander.
 
 ```R
-setwd("./")
+setwd("ruta_del_proyecto") # Aquí debemos establecer la ruta raíz del proyecto
 load("utils/top500_a.RData")
 ```
 
