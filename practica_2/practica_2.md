@@ -5,7 +5,7 @@ Podemos lanzar la interfaz de R Commander con el comando `library(Rcmdr)`
 
 ---
 
-Para poder importar la base de datos [Top 500](utils/top500_a.RData) debemos definir el directorio de trabajo de R Comander.
+Para poder importar la base de datos [Top 500](/utils/top500_a.RData) debemos definir el directorio de trabajo de R Comander.
 
 ```R
 setwd("./")
@@ -16,7 +16,7 @@ También podemos cargar el fichero desde el menú `Datos > Cargar conjunto de da
 
 Para convertir la base de datos en un Data Frame ejecutamos `ad.data.frame(attr(top500, "variable.labels"))` y luego observamos su contenido con `str(top500)`
 
-![Top500](img/image.png)
+![Top500](/img/image.png)
 
 ---
 
@@ -104,7 +104,7 @@ Si se quiere representar gráficamente, el diagrama de sectores es una de las re
 habituales, y se obtiene a través del menú `Gráficas > Gráfica de sectores` Como puede verse
 la familia Intel es la más frecuente seguida de AMD y Power.
 
-![Pie](img/image-1.png)
+![Pie](/img/image-1.png)
 
 El comando equivalente es `pie(tabla)`
 
@@ -114,7 +114,7 @@ Otra forma de respresentar estas variables es con el diagramas de barras. En Rcm
 barplot(table(top500$Familia), xlab="Familia", ylab="Frequency")
 ```
 
-![Barplot](img/image-2.png)
+![Barplot](/img/image-2.png)
 
 También podemos hacer una gráfica por grupos.
 Esto creará un "subgráfico" por cada una de las familias de procesadores
