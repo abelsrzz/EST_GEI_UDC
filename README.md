@@ -2,7 +2,8 @@
 
 Este repositorio contiene prácticas en R para la asignatura de Estadística en Ingeniería Informática, Universidad de la Coruña.
 
-> [!NOTE] Es necesario instalar R y todas sus dependencias para ejecutar el código del repositorio.
+> ![NOTE] 
+> Es necesario instalar R y todas sus dependencias para ejecutar el código del repositorio.
 
 ## Índice
 
