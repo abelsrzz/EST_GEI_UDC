@@ -57,7 +57,8 @@ hist(top500$Frecuencia, plot=FALSE)[c("breaks", "counts")]
 # Estadísticos/Resumenes/DIstribuciones de frecuencias - Ahora podremos ver Frecuencia_f y ver la nueva tabla
 
 # Para guardar dos gráficos por separado, debemos ejecutar
-windows()
+windows() # En windows
+x11() # En linux
 # Ahora al dibujar un gráfico este se verá en la ventana nueva
 # Desde el menú Gráficas podremos hacer los distintos gráficos
 

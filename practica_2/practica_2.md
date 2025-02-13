@@ -95,7 +95,7 @@ Para representar por terminal una tabla de frecuencias sin representación gráf
 Para segmentar una variable numérica generamos la variable Frecuencia_f desde el menú, seleccionamos el método `Segmentos equidistantes`
 - `Estadísticos/Resumenes/DIstribuciones de frecuencias` - Ahora podremos ver Frecuencia_f y ver la nueva tabla
 
-Para guardar dos gráficos por separado, debemos ejecutar `windows()`.
+Para guardar dos gráficos por separado, debemos ejecutar `windows()` en Windows o `x11()` en Linux.
 Ahora al dibujar un gráfico este se verá en la ventana nueva
 
 ---
