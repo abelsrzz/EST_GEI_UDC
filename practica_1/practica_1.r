@@ -209,7 +209,7 @@ cat("Vector sin ordenar:", x, "\n")
 cat("Vector ordenado:", quicksort(x), "\n")
 
 #############################################################################################################################
-# Ejercicio: quicksort
+# Ejercicio: media_recortada
 #############################################################################################################################
 # Escribe una función que implemente el cálculo de la media recortada al 20 %:
 # La media recortada es una variante de la media truncada. Se diferencia de esta en que en lugar
