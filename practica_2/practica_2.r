@@ -73,3 +73,39 @@ barplot(tabla, xlab="Familia", ylab="Frecuency", col="blue")
 tabla3 <- table(top500$Familia, top500$Nucleosproc)
 # Plot the barplot with the table of frequencies
 barplot(tabla3, beside=TRUE, legend=TRUE, xlab="Familia", ylab="Frecuency", col=rainbow(nrow(tabla3)))
+
+# Para realizar los cuantiles y quedarnos con el dato menor en lugar de realizar la media si los valores centrales son 2
+# Debemos indicarle type=1
+x <- c(6,2,6,1,1,5,9,9,4,9)
+quantile(x, c(0.25,0.5,0.7,0.75,0.95), type=1)
+
+# Para calcular la desviación típica no debemos confundir la función sd() -> (Cuasi-desviación típica)
+# var() -> cuasivarianza
+
+# Desviación típica -> sqrt((n-1) * var(x) / n )
+sqrt((length(x) - 1) * var(x) / length(x))
+
+# Estadísticos -> Resúmenes  -> Resúmenes de datos
+numSummary(top500[,"Frecuencia", drop=FALSE], statistics=c("mean", "sd", "IQR", "quantiles", "cv"), quantiles=c(0,.25,.5,.75,1))
+# IQR = Q3 - Q1 -> Es el 50% central de los datos
+
+# Coeficiente de variación
+s2 <- (500 - 1 ) / 500 * var(top500$Frecuencia)
+
+cv <- sqrt(s2) / mean(x)
+cv
+
+# Histograma: Gráficas -> Histograma -> Variable
+with(top500, Hist(Frecuencia, scale="frequency", breaks="Sturges", col="darkgray"))
+
+# Diagrama de Caja y Bigotes: Gráficos -> Diagrama de Caja -> Variable
+x11()
+Boxplot( ~ Frecuencia, data=top500, id=list(method="y"))
+boxplot(top500$Frecuencia, xlab="Frecuencia", horizontal=TRUE)
+
+# Agrupar por otro dato: Estadísticos -> Resúmenes  -> Resúmenes de datos -> Familia de datos
+numSummary(top500[,"Frecuencia", drop=FALSE], groups=top500$Familia, statistics=c("mean", "sd", "IQR", "quantiles", "cv"), quantiles=c(0,.25,.5,.75,1))
+
+# Misma situación para la gráfica
+x11()
+Boxplot(Frecuencia ~ Familia, data=top500, id=list(method="y"))
